@@ -511,7 +511,7 @@
       border-radius: var(--radius); background: var(--bg-card);
       border: 1px solid var(--border);
     }
-    .integration-card .icon { font-size: 36px; margin-bottom: 12px; }
+
     .integration-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
     .integration-card .status {
       font-size: 11px; font-family: var(--mono); font-weight: 600;
@@ -705,7 +705,6 @@
     <div class="hero-stats" data-animate>
       <div class="stat-pill"><span class="stat-number" data-count="17">0</span> AI Agents</div>
       <div class="stat-pill"><span class="stat-number" data-count="9">0</span> DoR Criteria</div>
-      <div class="stat-pill"><span class="stat-number">3</span> Model Tiers</div>
       <div class="stat-pill"><span class="stat-number">&infin;</span> Multi-Tenant</div>
       <div class="stat-pill"><span class="stat-number">SSE</span> Real-time Streaming</div>
     </div>
@@ -866,19 +865,19 @@
       <div class="feature-card" data-animate style="--i:5">
         <span class="feature-icon">&#128214;</span>
         <h4>User Story Generation</h4>
-        <p>Converts approved tickets into epics and user stories with acceptance criteria, ready for sprint planning in standard format.</p>
+        <p>Converts approved tickets into epics and user stories with acceptance criteria. Supports custom org-level story formats so output matches your team's conventions.</p>
         <span class="feature-tag delivery">Delivery</span>
       </div>
 
       <div class="feature-card" data-animate style="--i:6">
-        <span class="feature-icon">&#129513;</span>
+        <span class="feature-icon">&#128203;</span>
         <h4>Roadmap Generation</h4>
         <p>Creates delivery roadmaps with phases, milestones, dependencies, and critical paths so teams understand what to build and when.</p>
         <span class="feature-tag delivery">Delivery</span>
       </div>
 
       <div class="feature-card" data-animate style="--i:7">
-        <span class="feature-icon">&#128279;</span>
+        <span class="feature-icon">&#128200;</span>
         <h4>Demand Clustering</h4>
         <p>Semantically tags and clusters similar requests to reveal demand patterns across the portfolio and detect duplicates before work begins.</p>
         <span class="feature-tag intelligence">Intelligence</span>
@@ -910,6 +909,13 @@
         <h4>Pipeline Reporting</h4>
         <p>Generates intake reports with request volume, processing speed, demand trends, and export-readiness metrics across the organization.</p>
         <span class="feature-tag intelligence">Intelligence</span>
+      </div>
+
+      <div class="feature-card" data-animate style="--i:12">
+        <span class="feature-icon">&#128172;</span>
+        <h4>Setup Assistant</h4>
+        <p>A conversational chat widget that helps organizations build their profile through natural dialogue, suggesting formatted field content as you talk.</p>
+        <span class="feature-tag discovery">Discovery</span>
       </div>
     </div>
   </section>
@@ -949,7 +955,7 @@
           <span class="emoji">&#128270;</span> Investigator (Iris)
         </div>
         <div class="arch-node secondary">
-          <span class="emoji">&#128737;&#65039;</span> Critic (Sentinel)
+          <span class="emoji">&#9878;&#65039;</span> Critic (Arbiter)
         </div>
       </div>
 
@@ -1020,16 +1026,14 @@
         <div class="name">Iris</div>
         <div class="role">The Investigator</div>
         <div class="desc">Interviews users to uncover exactly what they need through friendly conversation and the right follow-up questions.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
-      <!-- Sentinel - Critic -->
+      <!-- Arbiter - Critic -->
       <div class="card agent-card" data-animate style="--i:1; --agent-color: var(--zinc)">
-        <span class="emoji">&#128737;&#65039;</span>
-        <div class="name">Sentinel</div>
+        <span class="emoji">&#9878;&#65039;</span>
+        <div class="name">Arbiter</div>
         <div class="role">The Quality Guardian</div>
         <div class="desc">Silently evaluates every conversation for completeness against the Definition of Ready. Nothing ships until it meets the bar.</div>
-        <span class="model-badge haiku">Haiku</span>
       </div>
 
       <!-- Scribe - Documentarian -->
@@ -1038,7 +1042,6 @@
         <div class="name">Scribe</div>
         <div class="role">The Documentarian</div>
         <div class="desc">Synthesizes interviews into beautifully structured feature tickets with every requirement, constraint, and success criterion.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
       <!-- Scout - Scoper -->
@@ -1047,16 +1050,14 @@
         <div class="name">Scout</div>
         <div class="role">The Scope Mapper</div>
         <div class="desc">Takes complex features and breaks them down into capabilities &mdash; MVP vs future, with effort estimates for each piece.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
-      <!-- Atlas - Analyst -->
+      <!-- Spectrum - Analyst -->
       <div class="card agent-card" data-animate style="--i:4; --agent-color: var(--sky)">
-        <span class="emoji">&#127760;</span>
-        <div class="name">Atlas</div>
+        <span class="emoji">&#128300;</span>
+        <div class="name">Spectrum</div>
         <div class="role">The Analyst</div>
         <div class="desc">Decomposes project briefs into individual features and assesses the full landscape of work needed to bring a product vision to life.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
       <!-- Explorer - Discovery -->
@@ -1065,16 +1066,14 @@
         <div class="name">Explorer</div>
         <div class="role">The Discovery Guide</div>
         <div class="desc">Guides product discovery conversations &mdash; exploring problems, defining target users, and shaping value propositions before building.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
-      <!-- Sage - Story Writer -->
+      <!-- Bard - Story Writer -->
       <div class="card agent-card" data-animate style="--i:6; --agent-color: var(--purple)">
-        <span class="emoji">&#128214;</span>
-        <div class="name">Sage</div>
+        <span class="emoji">&#128221;</span>
+        <div class="name">Bard</div>
         <div class="role">The Story Writer</div>
-        <div class="desc">Turns approved tickets into epics and user stories with acceptance criteria in "As a... I want... So that..." format.</div>
-        <span class="model-badge sonnet">Sonnet</span>
+        <div class="desc">Turns approved tickets into epics and user stories with acceptance criteria, using your org's custom story format.</div>
       </div>
 
       <!-- Pulse - Feedback Analyst -->
@@ -1083,25 +1082,22 @@
         <div class="name">Pulse</div>
         <div class="role">The Feedback Analyst</div>
         <div class="desc">Synthesizes customer feedback into themes, identifies suggested features, and surfaces the patterns that matter most.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
       <!-- Lens - Feedback Classifier -->
       <div class="card agent-card" data-animate style="--i:8; --agent-color: var(--orange)">
-        <span class="emoji">&#127991;&#65039;</span>
+        <span class="emoji">&#128247;</span>
         <div class="name">Lens</div>
         <div class="role">The Classifier</div>
         <div class="desc">Classifies individual feedback items by sentiment and theme at scale. Fast and precise, processing hundreds of items in seconds.</div>
-        <span class="model-badge haiku">Haiku</span>
       </div>
 
-      <!-- Compass - Planner -->
+      <!-- Charter - Planner -->
       <div class="card agent-card" data-animate style="--i:9; --agent-color: var(--cyan)">
-        <span class="emoji">&#129513;</span>
-        <div class="name">Compass</div>
+        <span class="emoji">&#128197;</span>
+        <div class="name">Charter</div>
         <div class="role">The Planner</div>
         <div class="desc">Generates delivery roadmaps with phases, milestones, and critical paths to help teams understand what to build and when.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
       <!-- Herald - Comms Writer -->
@@ -1110,34 +1106,30 @@
         <div class="name">Herald</div>
         <div class="role">The Communications Writer</div>
         <div class="desc">Writes stakeholder communications &mdash; executive summaries, release notes, status updates crafted for the right audience and tone.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
       <!-- Blueprint - Tech Writer -->
       <div class="card agent-card" data-animate style="--i:11; --agent-color: var(--sky)">
-        <span class="emoji">&#128208;</span>
+        <span class="emoji">&#127959;&#65039;</span>
         <div class="name">Blueprint</div>
         <div class="role">The Technical Architect</div>
         <div class="desc">Creates technical design briefs &mdash; components, APIs, data models, and non-functional requirements. The engineering starting point.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
-      <!-- Echo - Tagger -->
+      <!-- Marker - Tagger -->
       <div class="card agent-card" data-animate style="--i:12; --agent-color: var(--lime)">
-        <span class="emoji">&#128279;</span>
-        <div class="name">Echo</div>
+        <span class="emoji">#&#65039;&#8419;</span>
+        <div class="name">Marker</div>
         <div class="role">The Request Tagger</div>
         <div class="desc">Tags tickets with product-area labels and clusters semantically similar requests to reveal demand patterns across the portfolio.</div>
-        <span class="model-badge haiku">Haiku</span>
       </div>
 
       <!-- Beacon - Impact Scorer -->
       <div class="card agent-card" data-animate style="--i:13; --agent-color: var(--yellow)">
-        <span class="emoji">&#9878;&#65039;</span>
+        <span class="emoji">&#128200;</span>
         <div class="name">Beacon</div>
         <div class="role">The Impact Scorer</div>
         <div class="desc">Computes composite priority scores from request frequency, business context, and strategic alignment to focus on what matters most.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
       <!-- Oracle - Scenario Modeler (Coming Soon) -->
@@ -1146,7 +1138,6 @@
         <div class="name">Oracle <span class="coming-soon-tag">Coming Soon</span></div>
         <div class="role">The Prioritization Advisor</div>
         <div class="desc">Helps decide which requests to pursue first by comparing competing features by impact, effort signals, and strategic fit.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
       <!-- Chronicle - Report Writer -->
@@ -1155,16 +1146,14 @@
         <div class="name">Chronicle</div>
         <div class="role">The Pipeline Reporter</div>
         <div class="desc">Generates intake pipeline reports summarizing request volume, processing speed, demand trends, and what's ready to export.</div>
-        <span class="model-badge sonnet">Sonnet</span>
       </div>
 
       <!-- Triage - Question Scorer -->
       <div class="card agent-card" data-animate style="--i:16; --agent-color: var(--amber)">
-        <span class="emoji">&#9889;</span>
+        <span class="emoji">&#128680;</span>
         <div class="name">Triage</div>
         <div class="role">The Question Triager</div>
         <div class="desc">Instantly assesses the urgency of stakeholder questions, flagging critical items for immediate attention and keeping the queue prioritized.</div>
-        <span class="model-badge haiku">Haiku</span>
       </div>
     </div>
   </section>
@@ -1468,25 +1457,25 @@
 
     <div class="integration-grid stagger">
       <div class="card integration-card" data-animate style="--i:0">
-        <div class="icon">&#128203;</div>
+
         <h4>Jira</h4>
         <p>Full two-way sync: export tickets, stories, and epics with mapped priorities and custom fields.</p>
         <span class="status built">Built</span>
       </div>
       <div class="card integration-card" data-animate style="--i:1">
-        <div class="icon">&#9889;</div>
+
         <h4>Linear</h4>
         <p>Export tickets and stories as Linear issues with team assignment and label mapping.</p>
         <span class="status built">Built</span>
       </div>
       <div class="card integration-card" data-animate style="--i:2">
-        <div class="icon">&#128197;</div>
+
         <h4>Monday.com</h4>
         <p>Push tickets as items with column mapping for status, priority, and custom fields.</p>
         <span class="status planned">Planned</span>
       </div>
       <div class="card integration-card" data-animate style="--i:3">
-        <div class="icon">&#128172;</div>
+
         <h4>Slack</h4>
         <p>Receive notifications on ticket approvals, DoR threshold changes, and pipeline updates.</p>
         <span class="status planned">Planned</span>
@@ -1529,7 +1518,7 @@
 
       <div class="timeline-item completed">
         <h4>Phase 3 <span class="phase-tag done">Complete</span></h4>
-        <p>Project analysis &mdash; Atlas agent for multi-feature decomposition and landscape analysis from project briefs.</p>
+        <p>Project analysis &mdash; Spectrum agent for multi-feature decomposition and landscape analysis from project briefs.</p>
         <div class="timeline-features">
           <span class="timeline-feat">Project Analyst</span>
           <span class="timeline-feat">Feature Decomposition</span>
@@ -1587,11 +1576,24 @@
           <span class="timeline-feat">A/B Testing</span>
           <span class="timeline-feat">RAG Learning</span>
           <span class="timeline-feat">Pipeline Reports</span>
+          <span class="timeline-feat">PII Detection</span>
+          <span class="timeline-feat">Duplicate Detection</span>
+        </div>
+      </div>
+
+      <div class="timeline-item completed">
+        <h4>Phase 9 <span class="phase-tag done">Complete</span></h4>
+        <p>Advanced intelligence &mdash; Self-evaluation loops for Critic, Documentarian, and Scoper with quality scoring, gap validation, and iterative refinement.</p>
+        <div class="timeline-features">
+          <span class="timeline-feat">Advanced Modes</span>
+          <span class="timeline-feat">Self-Critique Loops</span>
+          <span class="timeline-feat">Quality Scoring</span>
+          <span class="timeline-feat">Question Triage</span>
         </div>
       </div>
 
       <div class="timeline-item current">
-        <h4>Phase 9 <span class="phase-tag wip">In Progress</span></h4>
+        <h4>Phase 10 <span class="phase-tag wip">Up Next</span></h4>
         <p>Prioritization &mdash; Oracle agent for scenario modeling and what-if analysis across competing feature requests.</p>
         <div class="timeline-features">
           <span class="timeline-feat">Scenario Modeling</span>
