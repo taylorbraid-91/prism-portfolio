@@ -845,7 +845,7 @@
         </div>
         <div class="builder-skill" data-animate style="--i:4">
           <h4>Quality &amp; Iteration</h4>
-          <p>Reviewed every output, caught edge cases, and iterated through 9 phases of features</p>
+          <p>Reviewed every output, caught edge cases, and iterated through 11 phases of features</p>
         </div>
       </div>
     </div>
@@ -1015,7 +1015,7 @@
       <div class="section-label">Architecture</div>
       <h2 class="section-title" id="arch-title">Collaborative agent loop</h2>
       <p class="section-subtitle">
-        Three core agents work in a continuous feedback loop. The Critic silently evaluates every exchange,
+        Three core agents work in a continuous feedback loop across multiple LLM providers. The Critic silently evaluates every exchange,
         feeding signals back to the Investigator until the spec is complete.
       </p>
     </div>
@@ -1502,6 +1502,8 @@
         <div class="stack-badges">
           <span class="stack-badge">Claude Sonnet 4</span>
           <span class="stack-badge">Claude Haiku 4.5</span>
+          <span class="stack-badge">GPT-4.1 Mini</span>
+          <span class="stack-badge">Gemini 2.5 Flash</span>
           <span class="stack-badge">Voyage AI</span>
           <span class="stack-badge">Vercel AI SDK</span>
         </div>
@@ -1690,8 +1692,19 @@
         </div>
       </div>
 
+      <div class="timeline-item completed">
+        <h4>Phase 11 <span class="phase-tag done">Complete</span></h4>
+        <p>Multi-Provider &mdash; Tiered model selection across Anthropic, OpenAI, and Google Gemini with provider abstraction, per-provider circuit breakers, encrypted API key management, and per-agent cost analytics.</p>
+        <div class="timeline-features">
+          <span class="timeline-feat">3 Model Tiers</span>
+          <span class="timeline-feat">Multi-Provider LLM</span>
+          <span class="timeline-feat">Cost Analytics</span>
+          <span class="timeline-feat">Provider Circuit Breakers</span>
+        </div>
+      </div>
+
       <div class="timeline-item current">
-        <h4>Phase 11 <span class="phase-tag wip">Up Next</span></h4>
+        <h4>Phase 12 <span class="phase-tag wip">Up Next</span></h4>
         <p>Prioritization &mdash; Oracle agent for scenario modeling and what-if analysis across competing feature requests.</p>
         <div class="timeline-features">
           <span class="timeline-feat">Scenario Modeling</span>
@@ -1706,7 +1719,7 @@
   <footer class="footer">
     <p>PRISM &mdash; Multi-Agent Feature Request Intake System</p>
     <p style="margin-top:8px">Designed &amp; built by an AI Product Builder</p>
-    <p style="margin-top:4px;font-size:12px">Built with Next.js, TypeScript, Prisma, and Claude AI</p>
+    <p style="margin-top:4px;font-size:12px">Built with Next.js, TypeScript, Prisma, Claude AI, OpenAI, and Gemini</p>
   </footer>
 
   <script>
